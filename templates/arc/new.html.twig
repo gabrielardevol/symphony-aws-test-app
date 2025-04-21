@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Arc{% endblock %}
+
+{% block body %}
+    <h1>Create new Arc</h1>
+
+    {{ include('arc/_form.html.twig') }}
+
+    <a href="{{ path('app_arc_index') }}">back to list</a>
+{% endblock %}

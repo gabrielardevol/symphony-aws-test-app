@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Arc{% endblock %}
+
+{% block body %}
+    <h1>Edit Arc</h1>
+
+    {{ include('arc/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_arc_index') }}">back to list</a>
+
+    {{ include('arc/_delete_form.html.twig') }}
+{% endblock %}
